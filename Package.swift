@@ -9,71 +9,139 @@ let package = Package(
   products: [
     .library(
       name: "FirebaseABTesting",
-      targets: ["FirebaseABTestingTarget"]
+      targets: ["FirebaseABTestingTarget", "FirebaseAnalyticsTarget"]
+    ),
+    .library(
+      name: "FirebaseABTestingWithoutAdIdSupport",
+      targets: ["FirebaseABTestingTarget", "FirebaseAnalyticsTargetWithoutAdIdSupport"]
     ),
     .library(
       name: "FirebaseAnalytics",
       targets: ["FirebaseAnalyticsTarget"]
     ),
     .library(
+      name: "FirebaseAnalyticsWithoutAdIdSupport",
+      targets: ["FirebaseAnalyticsTargetWithoutAdIdSupport"]
+    ),
+    .library(
       name: "FirebaseAnalyticsOnDeviceConversion",
-      targets: ["FirebaseAnalyticsOnDeviceConversionTarget"]
+      targets: ["FirebaseAnalyticsOnDeviceConversionTarget", "FirebaseAnalyticsTarget"]
+    ),
+    .library(
+      name: "FirebaseAnalyticsOnDeviceConversionWithoutAdIdSupport",
+      targets: ["FirebaseAnalyticsOnDeviceConversionTarget", "FirebaseAnalyticsTargetWithoutAdIdSupport"]
     ),
     .library(
       name: "FirebaseAppCheck",
-      targets: ["FirebaseAppCheckTarget"]
+      targets: ["FirebaseAppCheckTarget", "FirebaseAnalyticsTarget"]
+    ),
+    .library(
+      name: "FirebaseAppCheckWithoutAdIdSupport",
+      targets: ["FirebaseAppCheckTarget", "FirebaseAnalyticsTargetWithoutAdIdSupport"]
     ),
     .library(
       name: "FirebaseAppDistribution",
-      targets: ["FirebaseAppDistributionTarget"]
+      targets: ["FirebaseAppDistributionTarget", "FirebaseAnalyticsTarget"]
+    ),
+    .library(
+      name: "FirebaseAppDistributionWithoutAdIdSupport",
+      targets: ["FirebaseAppDistributionTarget", "FirebaseAnalyticsTargetWithoutAdIdSupport"]
     ),
     .library(
       name: "FirebaseAuth",
-      targets: ["FirebaseAuthTarget"]
+      targets: ["FirebaseAuthTarget", "FirebaseAnalyticsTarget"]
+    ),
+    .library(
+      name: "FirebaseAuthWithoutAdIdSupport",
+      targets: ["FirebaseAuthTarget", "FirebaseAnalyticsTargetWithoutAdIdSupport"]
     ),
     .library(
       name: "FirebaseCrashlytics",
-      targets: ["FirebaseCrashlyticsTarget"]
+      targets: ["FirebaseCrashlyticsTarget", "FirebaseAnalyticsTarget"]
+    ),
+    .library(
+      name: "FirebaseCrashlyticsWithoutAdIdSupport",
+      targets: ["FirebaseCrashlyticsTarget", "FirebaseAnalyticsTargetWithoutAdIdSupport"]
     ),
     .library(
       name: "FirebaseDatabase",
-      targets: ["FirebaseDatabaseTarget"]
+      targets: ["FirebaseDatabaseTarget", "FirebaseAnalyticsTarget"]
+    ),
+    .library(
+      name: "FirebaseDatabaseWithoutAdIdSupport",
+      targets: ["FirebaseDatabaseTarget", "FirebaseAnalyticsTargetWithoutAdIdSupport"]
     ),
     .library(
       name: "FirebaseDynamicLinks",
-      targets: ["FirebaseDynamicLinksTarget"]
+      targets: ["FirebaseDynamicLinksTarget", "FirebaseAnalyticsTarget"]
+    ),
+    .library(
+      name: "FirebaseDynamicLinksWithoutAdIdSupport",
+      targets: ["FirebaseDynamicLinksTarget", "FirebaseAnalyticsTargetWithoutAdIdSupport"]
     ),
     .library(
       name: "FirebaseFirestore",
-      targets: ["FirebaseFirestoreTarget"]
+      targets: ["FirebaseFirestoreTarget", "FirebaseAnalyticsTarget"]
+    ),
+    .library(
+      name: "FirebaseFirestoreWithoutAdIdSupport",
+      targets: ["FirebaseFirestoreTarget", "FirebaseAnalyticsTargetWithoutAdIdSupport"]
     ),
     .library(
       name: "FirebaseFunctions",
-      targets: ["FirebaseFunctionsTarget"]
+      targets: ["FirebaseFunctionsTarget", "FirebaseAnalyticsTarget"]
+    ),
+    .library(
+      name: "FirebaseFunctionsWithoutAdIdSupport",
+      targets: ["FirebaseFunctionsTarget", "FirebaseAnalyticsTargetWithoutAdIdSupport"]
     ),
     .library(
       name: "FirebaseInAppMessaging",
-      targets: ["FirebaseInAppMessagingTarget"]
+      targets: ["FirebaseInAppMessagingTarget", "FirebaseAnalyticsTarget"]
+    ),
+    .library(
+      name: "FirebaseInAppMessagingWithoutAdIdSupport",
+      targets: ["FirebaseInAppMessagingTarget", "FirebaseAnalyticsTargetWithoutAdIdSupport"]
     ),
     .library(
       name: "FirebaseMLModelDownloader",
-      targets: ["FirebaseMLModelDownloaderTarget"]
+      targets: ["FirebaseMLModelDownloaderTarget", "FirebaseAnalyticsTarget"]
+    ),
+    .library(
+      name: "FirebaseMLModelDownloaderWithoutAdIdSupport",
+      targets: ["FirebaseMLModelDownloaderTarget", "FirebaseAnalyticsTargetWithoutAdIdSupport"]
     ),
     .library(
       name: "FirebaseMessaging",
-      targets: ["FirebaseMessagingTarget"]
+      targets: ["FirebaseMessagingTarget", "FirebaseAnalyticsTarget"]
+    ),
+    .library(
+      name: "FirebaseMessagingWithoutAdIdSupport",
+      targets: ["FirebaseMessagingTarget", "FirebaseAnalyticsTargetWithoutAdIdSupport"]
     ),
     .library(
       name: "FirebasePerformance",
-      targets: ["FirebasePerformanceTarget"]
+      targets: ["FirebasePerformanceTarget", "FirebaseAnalyticsTarget"]
+    ),
+    .library(
+      name: "FirebasePerformanceWithoutAdIdSupport",
+      targets: ["FirebasePerformanceTarget", "FirebaseAnalyticsTargetWithoutAdIdSupport"]
     ),
     .library(
       name: "FirebaseRemoteConfig",
-      targets: ["FirebaseRemoteConfigTarget"]
+      targets: ["FirebaseRemoteConfigTarget", "FirebaseAnalyticsTarget"]
+    ),
+    .library(
+      name: "FirebaseRemoteConfigWithoutAdIdSupport",
+      targets: ["FirebaseRemoteConfigTarget", "FirebaseAnalyticsTargetWithoutAdIdSupport"]
     ),
     .library(
       name: "FirebaseStorage",
-      targets: ["FirebaseStorageTarget"]
+      targets: ["FirebaseStorageTarget", "FirebaseAnalyticsTarget"]
+    ),
+    .library(
+      name: "FirebaseStorageWithoutAdIdSupport",
+      targets: ["FirebaseStorageTarget", "FirebaseAnalyticsTargetWithoutAdIdSupport"]
     ),
     .library(
       name: "Google-Mobile-Ads-SDK",
@@ -81,7 +149,11 @@ let package = Package(
     ),
     .library(
       name: "GoogleSignIn",
-      targets: ["GoogleSignInTarget"]
+      targets: ["GoogleSignInTarget", "FirebaseAnalyticsTarget"]
+    ),
+    .library(
+      name: "GoogleSignInWithoutAdIdSupport",
+      targets: ["GoogleSignInTarget", "FirebaseAnalyticsTargetWithoutAdIdSupport"]
     )
   ],
   dependencies: [
@@ -95,7 +167,6 @@ let package = Package(
       name: "FirebaseABTestingTarget",
       dependencies: [
         "Firebase",
-        "FirebaseAnalyticsTarget",
         "_FirebaseABTesting"
       ],
       path: "Sources/FirebaseABTesting"
@@ -120,10 +191,27 @@ let package = Package(
       path: "Sources/FirebaseAnalytics"
     ),
     .target(
+      name: "FirebaseAnalyticsTargetWithoutAdIdSupport",
+      dependencies: [
+        "Firebase",
+        "_FBLPromises",
+        "_FirebaseAnalytics",
+        "_FirebaseAnalyticsSwift",
+        "_FirebaseCore",
+        "_FirebaseCoreDiagnostics",
+        "_FirebaseCoreInternal",
+        "_FirebaseInstallations",
+        "_GoogleAppMeasurement",
+        "_GoogleDataTransport",
+        "_GoogleUtilities",
+        "_nanopb"
+      ],
+      path: "Sources/FirebaseAnalyticsWithoutAdIdSupport"
+    ),
+    .target(
       name: "FirebaseAnalyticsOnDeviceConversionTarget",
       dependencies: [
         "Firebase",
-        "FirebaseAnalyticsTarget",
         .target(name: "_FirebaseAnalyticsOnDeviceConversion", condition: .when(platforms: [.iOS])),
         .target(name: "_GoogleAppMeasurementOnDeviceConversion", condition: .when(platforms: [.iOS]))
       ],
@@ -133,7 +221,6 @@ let package = Package(
       name: "FirebaseAppCheckTarget",
       dependencies: [
         "Firebase",
-        "FirebaseAnalyticsTarget",
         "_FirebaseAppCheck"
       ],
       path: "Sources/FirebaseAppCheck"
@@ -142,7 +229,6 @@ let package = Package(
       name: "FirebaseAppDistributionTarget",
       dependencies: [
         "Firebase",
-        "FirebaseAnalyticsTarget",
         .target(name: "_FirebaseAppDistribution", condition: .when(platforms: [.iOS]))
       ],
       path: "Sources/FirebaseAppDistribution"
@@ -151,7 +237,6 @@ let package = Package(
       name: "FirebaseAuthTarget",
       dependencies: [
         "Firebase",
-        "FirebaseAnalyticsTarget",
         "_FirebaseAuth",
         "_GTMSessionFetcher"
       ],
@@ -161,7 +246,6 @@ let package = Package(
       name: "FirebaseCrashlyticsTarget",
       dependencies: [
         "Firebase",
-        "FirebaseAnalyticsTarget",
         "_FirebaseCrashlytics"
       ],
       path: "Sources/FirebaseCrashlytics",
@@ -174,7 +258,6 @@ let package = Package(
       name: "FirebaseDatabaseTarget",
       dependencies: [
         "Firebase",
-        "FirebaseAnalyticsTarget",
         "_FirebaseDatabase",
         "_FirebaseDatabaseSwift",
         "_FirebaseSharedSwift",
@@ -186,7 +269,6 @@ let package = Package(
       name: "FirebaseDynamicLinksTarget",
       dependencies: [
         "Firebase",
-        "FirebaseAnalyticsTarget",
         .target(name: "_FirebaseDynamicLinks", condition: .when(platforms: [.iOS]))
       ],
       path: "Sources/FirebaseDynamicLinks"
@@ -195,7 +277,6 @@ let package = Package(
       name: "FirebaseFirestoreTarget",
       dependencies: [
         "Firebase",
-        "FirebaseAnalyticsTarget",
         "_BoringSSL-GRPC",
         "_FirebaseFirestore",
         "_FirebaseFirestoreSwift",
@@ -214,7 +295,6 @@ let package = Package(
       name: "FirebaseFunctionsTarget",
       dependencies: [
         "Firebase",
-        "FirebaseAnalyticsTarget",
         "_FirebaseAppCheckInterop",
         "_FirebaseAuthInterop",
         "_FirebaseCoreExtension",
@@ -229,7 +309,6 @@ let package = Package(
       name: "FirebaseInAppMessagingTarget",
       dependencies: [
         "Firebase",
-        "FirebaseAnalyticsTarget",
         "_FirebaseABTesting",
         .target(name: "_FirebaseInAppMessaging", condition: .when(platforms: [.iOS])),
         .target(name: "_FirebaseInAppMessagingSwift", condition: .when(platforms: [.iOS]))
@@ -243,7 +322,6 @@ let package = Package(
       name: "FirebaseMLModelDownloaderTarget",
       dependencies: [
         "Firebase",
-        "FirebaseAnalyticsTarget",
         "_FirebaseMLModelDownloader",
         "_SwiftProtobuf"
       ],
@@ -253,7 +331,6 @@ let package = Package(
       name: "FirebaseMessagingTarget",
       dependencies: [
         "Firebase",
-        "FirebaseAnalyticsTarget",
         "_FirebaseMessaging"
       ],
       path: "Sources/FirebaseMessaging"
@@ -262,7 +339,6 @@ let package = Package(
       name: "FirebasePerformanceTarget",
       dependencies: [
         "Firebase",
-        "FirebaseAnalyticsTarget",
         "_FirebaseABTesting",
         .target(name: "_FirebasePerformance", condition: .when(platforms: [.iOS, .tvOS])),
         "_FirebaseRemoteConfig"
@@ -273,7 +349,6 @@ let package = Package(
       name: "FirebaseRemoteConfigTarget",
       dependencies: [
         "Firebase",
-        "FirebaseAnalyticsTarget",
         "_FirebaseABTesting",
         "_FirebaseRemoteConfig",
         "_FirebaseRemoteConfigSwift",
@@ -285,7 +360,6 @@ let package = Package(
       name: "FirebaseStorageTarget",
       dependencies: [
         "Firebase",
-        "FirebaseAnalyticsTarget",
         "_FirebaseAppCheckInterop",
         "_FirebaseAuthInterop",
         "_FirebaseCoreExtension",
@@ -309,7 +383,6 @@ let package = Package(
       name: "GoogleSignInTarget",
       dependencies: [
         "Firebase",
-        "FirebaseAnalyticsTarget",
         .target(name: "_AppAuth", condition: .when(platforms: [.iOS])),
         .target(name: "_GTMAppAuth", condition: .when(platforms: [.iOS])),
         "_GTMSessionFetcher",

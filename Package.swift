@@ -196,7 +196,6 @@ let package = Package(
         "_FirebaseAnalytics",
         "_FirebaseAnalyticsSwift",
         "_FirebaseCore",
-        "_FirebaseCoreDiagnostics",
         "_FirebaseCoreInternal",
         "_FirebaseInstallations",
         "_GoogleAppMeasurement",
@@ -227,7 +226,7 @@ let package = Package(
       name: "FirebaseAppDistributionTarget",
       dependencies: [
         "Firebase",
-        .target(name: "_FirebaseAppDistribution", condition: .when(platforms: [.iOS]))
+        .target(name: "_FirebaseAppDistribution", condition: .when(platforms: [.iOS])),
         "_GoogleDataTransport"
       ],
       path: "Sources/FirebaseAppDistribution"
@@ -245,7 +244,7 @@ let package = Package(
       name: "FirebaseCrashlyticsTarget",
       dependencies: [
         "Firebase",
-        "_FirebaseCrashlytics"
+        "_FirebaseCrashlytics",
         "_GoogleDataTransport"
       ],
       path: "Sources/FirebaseCrashlytics",
@@ -334,7 +333,7 @@ let package = Package(
       name: "FirebaseMessagingTarget",
       dependencies: [
         "Firebase",
-        "_FirebaseMessaging"
+        "_FirebaseMessaging",
         "_GoogleDataTransport"
       ],
       path: "Sources/FirebaseMessaging"
